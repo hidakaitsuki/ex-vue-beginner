@@ -17,14 +17,14 @@ import Vue from "vue";
 import Component from "vue-class-component";
 @Component
 export default class ex01 extends Vue {
-  name = "日髙樹";
-  age = 26;
-  add10year = this.age + 10;
-  hobbies = ["スイム", "バイク", "ラン"];
-  url =
+  private name = "日髙樹";
+  private age = 26;
+  private add10year = this.age + 10;
+  private hobbies = ["スイム", "バイク", "ラン"];
+  private url =
     "https://www.rakus-partners.co.jp/?gclid=EAIaIQobChMIj8eJxPj98wIVAWoqCh11AgfZEAAYASAAEgJoK_D_BwE";
 
-  imgurl = "img/adpDSC_2005.jpg";
+  private imgurl = "img/adpDSC_2005.jpg";
 }
 </script>
 

@@ -9,7 +9,9 @@
     </p>
     <a v-bind:href="url">ラクスパートナーズ</a><br />
     <img v-bind:src="imgurl" /><br />
-    <button type="button" v-on:click="onclick">ボタン</button>
+    <button type="button" v-on:click="onclick" v-bind:disabled="cannotclick">
+      ボタン
+    </button>
   </div>
 </template>
 
@@ -18,12 +20,13 @@ import Vue from "vue";
 import Component from "vue-class-component";
 @Component
 export default class ex01 extends Vue {
-  name = "";
-  age = 0;
-  add10year = 0;
-  hobbies = new Array<string>();
-  url = "";
-  imgurl = "";
+  private name = "";
+  private age = 0;
+  private add10year = 0;
+  private hobbies = new Array<string>();
+  private url = "";
+  private imgurl = "";
+  private cannotclick = false;
   onclick() {
     this.name = "日髙樹";
     this.age = 26;
@@ -33,6 +36,7 @@ export default class ex01 extends Vue {
       "https://www.rakus-partners.co.jp/?gclid=EAIaIQobChMIj8eJxPj98wIVAWoqCh11AgfZEAAYASAAEgJoK_D_BwE";
 
     this.imgurl = "img/adpDSC_2005.jpg";
+    this.cannotclick = true;
   }
 }
 </script>
