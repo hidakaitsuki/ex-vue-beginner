@@ -7,6 +7,8 @@
     <router-view />
     <h1>Exam answers</h1>
     <router-link to="/ex01">Ex01</router-link>|
+    <router-link to="/ex02">Ex02</router-link>|
+
   </div>
 </template>
 
