@@ -15,7 +15,7 @@ import Component from "vue-class-component";
 export default class ex03 extends Vue {
   private num1 = 0;
   private num2 = 0;
-  private get answer() {
+  get answer() {
     return this.num1 + this.num2;
   }
 }
